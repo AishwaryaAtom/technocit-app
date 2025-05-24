@@ -15,8 +15,8 @@ export const registrationSchema = Yup.object().shape({
     .required("Password is required")
     .min(6, "Password must be at least 6 characters")
     .matches(
-      /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/,
-      "Password must contain upper/lowercase letters, number, and special character"
+      /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\W_]{6,}$/,
+      "Password must contain upper/lowercase letters, number, and  special character"
     ),
 
   mobile: Yup.string()
@@ -52,7 +52,7 @@ export const loginSchema = Yup.object().shape({
     .required("Password is required")
     .min(6, "Password contains least 6 characters")
     .matches(
-      /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/,
+      /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\W_]{6,}$/,
       "Password not in correct format, please check"
     ),
 });

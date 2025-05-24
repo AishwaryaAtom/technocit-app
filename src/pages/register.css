@@ -1,0 +1,5 @@
+/* Target the calendar icon inside input[type="date"] */
+.custom-date::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+  }
+  

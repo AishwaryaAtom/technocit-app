@@ -111,33 +111,7 @@ const Register = () => {
                   />
                 </div>
 
-                {/* <div className="relative">
-                  <Field
-                    name="password"
-                    type={showPassword ? "text" : "password"}
-                    placeholder="Password"
-                    className="w-full border border-gray-300 rounded-md px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-red-400"
-                  />
-                  <span
-                    className="absolute right-3 top-1/4 transform -translate-y-1/2 text-xl text-gray-600 cursor-pointer"
-                    onClick={() => setShowPassword(!showPassword)}
-                  >
-                    {showPassword ? (
-                      <AiOutlineEyeInvisible />
-                    ) : (
-                      <AiOutlineEye />
-                    )}
-                  </span>
                 
-                  <div className="min-h-[20px]">
-                    <ErrorMessage
-                      name="password"
-                      component="div"
-                      className="text-red-500 text-sm"
-                    />
-                  </div>
-                </div> */}
-
                 {[
                   { name: "role", placeholder: "Role" },
                   {

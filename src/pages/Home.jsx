@@ -69,23 +69,7 @@ const Home = () => {
     <>
       <Header title={"User List"} />
       <div className="p-6 bg-gray-50 min-h-screen">
-        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-          <input
-            type="text"
-            placeholder="Filter by User ID"
-            className="p-2 border rounded"
-            value={filterId}
-            onChange={(e) => setFilterId(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Filter by User Name"
-            className="p-2 border rounded"
-            value={filterName}
-            onChange={(e) => setFilterName(e.target.value)}
-          />
-        </div> */}
-
+        
         {usersLoading ? (
           <div className="flex justify-center items-center h-screen">
             <Spinner animation="border" variant="danger" />

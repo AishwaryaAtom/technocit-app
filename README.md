@@ -1,12 +1,11 @@
 # React + Vite
+*In this project I have designed and integrated Register,Login and a Home page
+*I have also created Table,Header,Filter,Modal as reusable components to use inside the pages
+*For validations i have used Yub and Formik.
+*Error messages are shown using react-hot-toaster package , Whatever response i get from api those errors       are  shown . For login api and register api i have not got appropriate error message in response so i have given some common error messages.
+*I have used axios,React-query for api calls for handling loading etc
+*I have used ContextApi for sharing the user details through out the application named UserContext.
+*For optimization I used Lazy Loading in addition i have used Protected routes.
+*I have used react-icons for icons.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

@@ -9,8 +9,7 @@ const Login = lazy(() => import("../pages/Login"));
 const Home = lazy(() => import("../pages/Home"));
 
 const AppRouter = () => (
-  //   <Router>
-  <Suspense
+   <Suspense
     fallback={
       <div className="flex justify-center items-center h-screen">
         <Spinner animation="border" variant="danger" />
@@ -31,7 +30,7 @@ const AppRouter = () => (
       <Route path="*" element={<Navigate to="/login" />} />
     </Routes>
   </Suspense>
-  //   </Router>
+  
 );
 
 export default AppRouter;

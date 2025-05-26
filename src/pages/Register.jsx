@@ -214,10 +214,10 @@ const Register = () => {
 
                 <button
                   type="submit"
-                  disabled={mutation.isLoading}
+                  disabled={mutation.isPending}
                   className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-md font-semibold transition"
                 >
-                  {mutation.isLoading ? "Registering..." : "Register"}
+                  {mutation.isPending ? "Registering..." : "Register"}
                 </button>
 
                 <p className="text-center text-sm text-gray-600 mt-3">

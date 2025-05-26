@@ -27,6 +27,7 @@ const Login = () => {
       toast.error(error.message || "Something went wrong. Try again later"); // Will now show "User Not Found"
     },
   });
+  
   return (
     <div className="flex justify-center items-center bg-gray-100 py-12 px-4 min-h-screen">
       <div className="bg-white rounded-xl shadow-lg flex flex-col md:flex-row overflow-hidden w-full max-w-4xl">
@@ -85,10 +86,10 @@ const Login = () => {
                 </div>
                 <button
                   type="submit"
-                  disabled={mutation.isLoading}
+                  disabled={mutation.isPending}
                   className="w-full bg-red-500 hover:bg-red-600 text-white py-2 rounded-md font-semibold transition"
                 >
-                  {mutation.isLoading ? "Logging in..." : "Login"}
+                  {mutation.isPending ? "Logging in..." : "Login"}
                 </button>
                 <p className="text-center text-sm text-gray-600 mt-3">
                   Don’t have an account?
